@@ -1,10 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Julianna Bavolek | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f4ee;
+            color: #2f3a3a;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #234f47;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #dce9e5;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #234f47;
+        }
+
+        header h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        section {
+            background-color: white;
+            margin: 25px 0;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #234f47;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #eef4f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #2d6f64;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #234f47;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <header>
         <h1>Julianna Bavolek</h1>
@@ -12,107 +138,107 @@
         <p>University of Utah | David Eccles School of Business</p>
     </header>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Julianna Bavolek | Portfolio</title>
-</head>
+    <main>
 
-<body>
+        <section id="about">
+            <h2>About Me</h2>
 
-    <header>
-        <h1>Julianna Bavolek</h1>
-        <h2>Operations & Supply Chain Student</h2>
-        <p>University of Utah | David Eccles School of Business</p>
-    </header>
+            <p>
+                I am an Operations and Supply Chain student at the University of Utah's
+                David Eccles School of Business. I am interested in pursuing a career
+                in supply chain management, procurement, and business operations, with
+                a focus on making processes more efficient and effective. I am especially
+                interested in how artificial intelligence can help businesses analyze
+                data, improve decision-making, automate repetitive tasks, and optimize
+                operations. I am also interested in developing my technical skills in
+                areas such as data analytics, information systems, Microsoft Excel,
+                and AI tools. Throughout my education and future career, I hope to combine
+                my knowledge of business operations with technology to solve problems,
+                improve processes, and help organizations make more informed decisions.
+            </p>
+        </section>
 
-    <hr>
+        <section id="skills">
+            <h2>Skills</h2>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am an Operations and Supply Chain student at the University of Utah's
-            David Eccles School of Business. I am interested in pursuing a career
-            in supply chain management, procurement, and business operations, with
-            a focus on making processes more efficient and effective. I am especially
-            interested in how artificial intelligence can help businesses analyze
-            data, improve decision-making, automate repetitive tasks, and optimize
-            operations. I am also interested in developing my technical skills in
-            areas such as data analytics, information systems, Microsoft Excel,
-            and AI tools. Throughout my education and future career, I hope to combine
-            my knowledge of business operations with technology to solve problems,
-            improve processes, and help organizations make more informed decisions.
-        </p>
-    </section>
+            <ul>
+                <li>Microsoft Excel</li>
+                <li>Data Analytics</li>
+                <li>AI Prompt Engineering</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>HTML</li>
+                <li>Process Improvement</li>
+                <li>Supply Chain Analysis</li>
+            </ul>
+        </section>
 
-    <hr>
+        <section id="projects">
+            <h2>Projects</h2>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Microsoft Excel</li>
-            <li>Data Analytics</li>
-            <li>AI Prompt Engineering</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>HTML</li>
-            <li>Process Improvement</li>
-            <li>Supply Chain Analysis</li>
-        </ul>
-    </section>
+            <div class="projects">
 
-    <hr>
+                <div class="project-card">
+                    <h3>AI Business Analysis</h3>
+                    <p>Business data analysis using AI tools.</p>
+                </div>
 
-    <section>
-        <h2>Projects</h2>
+                <div class="project-card">
+                    <h3>Data Visualization</h3>
+                    <p>Data visualization and dashboard project.</p>
+                </div>
 
-        <h3>AI Business Analysis</h3>
-        <p>Business data analysis using AI tools.</p>
+                <div class="project-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Development of a professional portfolio website
+                        using HTML and GitHub Pages.
+                    </p>
+                </div>
 
-        <h3>Data Visualization</h3>
-        <p>Data visualization and dashboard project.</p>
+                <div class="project-card">
+                    <h3>Process Improvement</h3>
+                    <p>AI-assisted business process improvement project.</p>
+                </div>
 
-        <h3>Web Development</h3>
-        <p>Development of a professional portfolio website using HTML and GitHub Pages.</p>
+            </div>
+        </section>
 
-        <h3>Process Improvement</h3>
-        <p>AI-assisted business process improvement project.</p>
-    </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Resume coming soon.</p>
+        </section>
 
-    <hr>
+        <section id="contact">
+            <h2>Contact</h2>
 
-    <section>
-        <h2>Resume</h2>
-        <p>Resume coming soon.</p>
-    </section>
+            <p>
+                University Email:
+                <a href="mailto:u1574148@utah.edu">
+                    u1574148@utah.edu
+                </a>
+            </p>
 
-    <hr>
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/julianna-bavolek">
+                    www.linkedin.com/in/julianna-bavolek
+                </a>
+            </p>
 
-    <section>
-        <h2>Contact</h2>
+            <p>
+                GitHub:
+                <a href="https://github.com/juliannabavolek">
+                    github.com/juliannabavolek
+                </a>
+            </p>
+        </section>
 
-        <p>
-            University Email:
-            <a href="mailto:u1574148@utah.edu">u1574148@utah.edu</a>
-        </p>
+    </main>
 
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/julianna-bavolek">
-                www.linkedin.com/in/julianna-bavolek
-            </a>
-        </p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/juliannabavolek">
-                github.com/juliannabavolek
-            </a>
-        </p>
-
-    </section>
+    <footer>
+        <p>© 2026 Julianna Bavolek</p>
+    </footer>
 
 </body>
 </html>
